@@ -1,0 +1,47 @@
+{
+  "name": "graphojection",
+  "version": "0.0.1",
+  "description": "generate your graphQL API from objection.js models",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "ava"
+  },
+  "lint-staged": {
+    "*.{js,json,css}": ["prettier --write", "git add"],
+    "*.js": ["eslint --fix", "git add"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/graphojection.git"
+  },
+  "keywords": ["graphql", "sql", "objection", "objectionjs", "knex"],
+  "author": "capajj@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capaj/graphojection/issues"
+  },
+  "homepage": "https://github.com/capaj/graphojection#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.2",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4"
+  },
+  "dependencies": {
+    "graphql": "^0.11.7"
+  }
+}

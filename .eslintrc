@@ -1,0 +1,14 @@
+{
+  "extends": ["standard", "standard-jsx", "plugin:flowtype/recommended"],
+  "rules": {
+    "prettier/prettier": "error",
+    "space-before-function-paren": "off",
+    "standard/computed-property-even-spacing": "off",
+    "no-unexpected-multiline": "off",
+    "indent": "off",
+    "jsx-quotes": "off"
+  },
+  "parser": "babel-eslint",
+  "plugins": ["flowtype", "prettier"],
+  "root": true
+}
