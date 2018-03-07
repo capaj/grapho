@@ -1,11 +1,10 @@
 import { graphql } from 'graphql'
-import grapho from './index'
-import makeSchema from './index'
+import buildModelSchema from './schema-builder'
 
 describe('grapho', () => {
   let schema
   beforeAll(function() {
-    schema = makeSchema()
+    schema = buildModelSchema()
   })
   it('generates schema', async () => {
     expect(schema).toMatchSnapshot()

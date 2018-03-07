@@ -1,11 +1,11 @@
 import {
-  graphql,
+  // graphql,
   GraphQLSchema,
   GraphQLObjectType,
   GraphQLString
 } from 'graphql'
 
-export default function makeSchema() {
+export default function buildModelSchema() {
   var schema = new GraphQLSchema({
     query: new GraphQLObjectType({
       name: 'RootQueryType',
