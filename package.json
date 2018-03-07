@@ -1,0 +1,47 @@
+{
+  "name": "grapho",
+  "version": "0.0.1",
+  "description": "generates a GQL api from objection models",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/grapho.git"
+  },
+  "keywords": [
+    "graphql"
+  ],
+  "author": "capajj@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capaj/grapho/issues"
+  },
+  "homepage": "https://github.com/capaj/grapho#readme",
+  "devDependencies": {
+    "@types/graphql": "^0.12.4",
+    "babel-jest": "^22.4.1",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.2",
+    "ts-jest": "^22.4.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "graphql": "^0.13.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+      "^.+\\.js?$": "babel-jest"
+    },
+    "testRegex": "(\\.(spec))\\.js$"
+  }
+}
